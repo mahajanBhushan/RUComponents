@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2659" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8gq-FT-w8s">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="fzR-cE-5Pa">
+            <objects>
+                <viewController storyboardIdentifier="login" id="8gq-FT-w8s" customClass="LoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="akm-nx-GQG"/>
+                        <viewControllerLayoutGuide type="bottom" id="RqK-OY-K6H"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NGY-Am-evX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pgo-HW-vwJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gdn-2b-Ng3">
+                                        <rect key="frame" x="59" y="246" width="257" height="174"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ebr-aV-fXF">
+                                                <rect key="frame" x="20" y="113" width="217" height="41"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AdQ-xU-qqf">
+                                                <rect key="frame" x="20" y="20" width="217" height="41"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="AdQ-xU-qqf" secondAttribute="height" multiplier="217:41" id="BHj-fK-R9g"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="AdQ-xU-qqf" secondAttribute="trailing" constant="20" id="7qY-0I-7WF"/>
+                                            <constraint firstAttribute="bottom" secondItem="ebr-aV-fXF" secondAttribute="bottom" constant="20" id="8fD-I5-M9J"/>
+                                            <constraint firstItem="ebr-aV-fXF" firstAttribute="leading" secondItem="Gdn-2b-Ng3" secondAttribute="leading" constant="20" id="VJ3-Ig-piE"/>
+                                            <constraint firstAttribute="trailing" secondItem="ebr-aV-fXF" secondAttribute="trailing" constant="20" id="aaw-Xw-xm0"/>
+                                            <constraint firstItem="ebr-aV-fXF" firstAttribute="top" secondItem="AdQ-xU-qqf" secondAttribute="bottom" constant="52" id="cgh-k7-xqZ"/>
+                                            <constraint firstItem="AdQ-xU-qqf" firstAttribute="top" secondItem="Gdn-2b-Ng3" secondAttribute="top" constant="20" id="mzJ-LC-Eba"/>
+                                            <constraint firstItem="AdQ-xU-qqf" firstAttribute="leading" secondItem="Gdn-2b-Ng3" secondAttribute="leading" constant="20" id="vZB-X9-rvn"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.41176470590000003" green="0.74509803919999995" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Gdn-2b-Ng3" firstAttribute="top" secondItem="Pgo-HW-vwJ" secondAttribute="top" constant="246" id="6oY-eU-tYe"/>
+                                    <constraint firstAttribute="bottom" secondItem="Gdn-2b-Ng3" secondAttribute="bottom" constant="247" id="W0u-UB-1Rd"/>
+                                    <constraint firstItem="Gdn-2b-Ng3" firstAttribute="centerY" secondItem="Pgo-HW-vwJ" secondAttribute="centerY" id="eUw-6y-90P"/>
+                                    <constraint firstItem="Gdn-2b-Ng3" firstAttribute="leading" secondItem="Pgo-HW-vwJ" secondAttribute="leading" constant="59" id="jEb-hw-LvD"/>
+                                    <constraint firstAttribute="trailing" secondItem="Gdn-2b-Ng3" secondAttribute="trailing" constant="59" id="rkk-lJ-O27"/>
+                                    <constraint firstItem="Gdn-2b-Ng3" firstAttribute="centerX" secondItem="Pgo-HW-vwJ" secondAttribute="centerX" id="ufl-Gx-k4R"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Pgo-HW-vwJ" firstAttribute="top" secondItem="NGY-Am-evX" secondAttribute="top" id="I8K-vj-bVY"/>
+                            <constraint firstAttribute="trailing" secondItem="Pgo-HW-vwJ" secondAttribute="trailing" id="J3A-xm-2BH"/>
+                            <constraint firstItem="RqK-OY-K6H" firstAttribute="top" secondItem="Pgo-HW-vwJ" secondAttribute="bottom" id="VHz-9t-kal"/>
+                            <constraint firstItem="Pgo-HW-vwJ" firstAttribute="leading" secondItem="NGY-Am-evX" secondAttribute="leading" id="YXV-CQ-7eh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="AdQ-xU-qqf" id="JAv-mr-gIL"/>
+                        <outlet property="passwordTextField" destination="ebr-aV-fXF" id="PGy-ZV-LuW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mBk-jO-Nk5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="92" y="-44.527736131934034"/>
+        </scene>
+    </scenes>
+</document>
