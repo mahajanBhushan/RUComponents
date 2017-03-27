@@ -1,0 +1,6 @@
+use_frameworks!
+target 'ReusableComponents_Tests' do
+  pod 'ReusableComponents', :path => '../'
+  
+  
+end
