@@ -27,6 +27,20 @@
 }
 
 /*
+ Get login instance.
+ */
+
+-(LoginViewController*)navigateToLoginScreen
+{
+    UIStoryboard *loginStoryboard = [UIStoryboard storyboardWithName:@"Login"
+                                                             bundle: nil];
+    LoginViewController *loginCtrl = [loginStoryboard instantiateViewControllerWithIdentifier:@"login"];
+    return loginCtrl;
+}
+
+
+
+/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation

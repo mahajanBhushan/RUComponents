@@ -1,0 +1,16 @@
+PODS:
+  - ReusableComponents (0.1.0)
+
+DEPENDENCIES:
+  - ReusableComponents (from `../`)
+
+EXTERNAL SOURCES:
+  ReusableComponents:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ReusableComponents: fbe054139cfda40cd1e1f618751f2d315fd4bc7a
+
+PODFILE CHECKSUM: 2197f6bed8fdb6703494b56e78f3f5cd32f3956e
+
+COCOAPODS: 1.1.1
