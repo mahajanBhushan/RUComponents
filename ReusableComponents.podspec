@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 
   s.description      = 'Create an iOS apps Reusable components.'
 
-  s.homepage         = 'https://github.com/mahajanBhushan/RUComponent'
+  s.homepage         = 'https://github.com/mahajanBhushan/RUComponents'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'bhushan' => 'bhushan@biz4solutions.com' }
@@ -29,6 +29,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'ReusableComponents/Classes/**/*'
+
+  s.resources = ["Resources/**/*.storyboard"]
   
   # s.resource_bundles = {
   #   'ReusableComponents' => ['ReusableComponents/Assets/*.png']
