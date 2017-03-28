@@ -28,13 +28,9 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'ReusableComponents/Classes/**/*'
+  s.source_files = 'ReusableComponents/Classes/**/*.{h,m}'
 
-  s.resources = ["Resources/**/*.storyboard"]
-  
-  # s.resource_bundles = {
-  #   'ReusableComponents' => ['ReusableComponents/Assets/*.png']
-  # }
+  s.resources = 'ReusableComponents/Classes/**/*.storyboard'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
